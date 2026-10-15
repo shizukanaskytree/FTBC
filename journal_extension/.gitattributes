@@ -1,0 +1,4 @@
+# Preserve registered source and record hashes on checkouts with autocrlf enabled.
+frozen_source/** -text
+results/** -text
+configs/original/** -text

@@ -24,3 +24,14 @@ If you find this repository useful, please consider citing our paper:
   year={2024}
 }
 ```
+
+## Neural Networks journal extension
+
+The [journal extension](journal_extension/) contains the implementation, recorded
+results, experimental settings and reproduction instructions for **Time-Ordered
+Event Fitting for Forward Temporal Bias Correction in ANN-to-SNN Conversion**
+(Xiaofeng Wu, Velibor Bojkovic and Kun Suo; manuscript prepared for Neural Networks).
+The ECCV 2024 implementations and citation above remain the conference version.
+Start with `bash journal_extension/reproduce.sh` to verify the release and
+rebuild the primary-result summary on a CPU, without datasets or checkpoints.
+See its README for the separate solver check and the requirements for full model evaluation.

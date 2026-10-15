@@ -1,0 +1,1236 @@
+{
+  "manuscript_title": "Time-Ordered Event Fitting for Forward Temporal Bias Correction in ANN-to-SNN Conversion",
+  "authors": [
+    "Xiaofeng Wu",
+    "Velibor Bojkovic",
+    "Kun Suo"
+  ],
+  "prepared_date": "2026-10-15",
+  "scientific_revision": "locked-eval-v2 / v1",
+  "source_files": [
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source/analyze_probe.py",
+      "release_path": "frozen_source/c1-pre/source/analyze_probe.py",
+      "sha256": "c0daacd6e03797a542ab0c837cce698f1543df35476f627ceb76ff6d477f9b47"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source/check_order_constraints.py",
+      "release_path": "frozen_source/c1-pre/source/check_order_constraints.py",
+      "sha256": "f303f4f878c5e690e8816340deda914e5ba592603ace2ee036df3b4b20ac78e2"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source/prepare_probe.py",
+      "release_path": "frozen_source/c1-pre/source/prepare_probe.py",
+      "sha256": "4ffee9cd3f92bbd1a54a73babfa6a23cb48fb5940e6397cd1597552b016618a8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source/run_probe.py",
+      "release_path": "frozen_source/c1-pre/source/run_probe.py",
+      "sha256": "63c998634f4f167f3ac656dda18772a83cd4941dd1fa0fd354f03a1bdbe14bab"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source/test_analyze_probe.py",
+      "release_path": "frozen_source/c1-pre/source/test_analyze_probe.py",
+      "sha256": "0114abbc05a3d8210644d95aebe27dfa37aa099682125e4028c79631a1ce8b7a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/parallel/models/ResNet_QCFS.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/parallel/models/ResNet_QCFS.py",
+      "sha256": "8aa43e6e9d8ce33ebc3b8eac007ba6bfd2ce9782a88f71468281fd71c24b865f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/parallel/models/ResNet_QCFS_imagenet.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/parallel/models/ResNet_QCFS_imagenet.py",
+      "sha256": "650e3a024a9d4f98b12d3016d7fe05239fb233e58591510b786b6b564c5cca3e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/parallel/models/ResNet_ReLU.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/parallel/models/ResNet_ReLU.py",
+      "sha256": "a9d9bc3769bafcd07b134e441252b026488903dcb6ae19a2bd992f4e0a2fecec"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/parallel/models/VGG_QCFS.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/parallel/models/VGG_QCFS.py",
+      "sha256": "338beb95c22d13f8c33bcb4d470c02c4399cb5201bd56516ffbf5be10ee4e765"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/parallel/modules.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/parallel/modules.py",
+      "sha256": "1c05a44c01be6174750e9a94a80b7edf4064cda9a0c5cdb7900befedcdb417fd"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/serial/Models/ResNet.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/serial/Models/ResNet.py",
+      "sha256": "c82282b2ad64a30796d03d4fa4e867c19b4649af4830f0c769b8d4ed98949ca8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/serial/Models/VGG.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/serial/Models/VGG.py",
+      "sha256": "bb559c52e97ed293eb0c0166e65c778ce9a6b004b834ac277182e9d0b4e2908e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/serial/Models/__init__.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/serial/Models/__init__.py",
+      "sha256": "5178f4eb0b4b971b89cad7f4004c5369b664ac0a256394472edddc9f00d93c85"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/serial/Models/layer.py",
+      "release_path": "frozen_source/c1-pre/source-snapshot/serial/Models/layer.py",
+      "sha256": "4a3c00bcd746cf903ce3aa2259779b7b3f87c09511200b3e1a0922194b78d645"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e3/source/event_solver.py",
+      "release_path": "frozen_source/c1-pre/e3/source/event_solver.py",
+      "sha256": "16410c1cacc0529eca832488f2d6bba48e5b138ac375e562c4f1b14b61909432"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e3/source/run_event_pilot.py",
+      "release_path": "frozen_source/c1-pre/e3/source/run_event_pilot.py",
+      "sha256": "0a997da995b6c70b7d9b52fb9cd48cc9e533a41e96ea2f154d86aa45222e646f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e3/source/check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e3/source/check_cpu.py",
+      "sha256": "48eec5d5c0b393e7c9ffef81fab821c2a50d9dd74841119b947bb05d0874e6a7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e3/source/accept_and_analyze.py",
+      "release_path": "frozen_source/c1-pre/e3/source/accept_and_analyze.py",
+      "sha256": "ecc590ba6207d90b836c5e2ab00198a1642b6c46e8e67ab01af5f0942123c329"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e4/source/common.py",
+      "release_path": "frozen_source/c1-pre/e4/source/common.py",
+      "sha256": "eac15c938035a51c443170b4a10e658989ede9d4da979b5507dd68c9543848e3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e4/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e4/source/freeze_submit.py",
+      "sha256": "12d7fe59486318e01ada3d4c0f72a70166df5e4c2a08863965eefc232742927f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e4/source/accept_and_summarize.py",
+      "release_path": "frozen_source/c1-pre/e4/source/accept_and_summarize.py",
+      "sha256": "cd9f2930a81ab03b726c7d2cf241508b12488fa7962516bee8cc8d4a08d88d9e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e4/source/run_interventions.py",
+      "release_path": "frozen_source/c1-pre/e4/source/run_interventions.py",
+      "sha256": "6956dd89afe9a9cf4dbf6e9253a1f1b472ea187c12095eb36608a528f3ff8f65"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e4/source/run_objective_probe.py",
+      "release_path": "frozen_source/c1-pre/e4/source/run_objective_probe.py",
+      "sha256": "ab8d45c44501b2ffb15c6e49d83a0da9f950cd26408a1256d8d6bd14212436d3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/audit_exclusions.py",
+      "release_path": "frozen_source/c1-pre/e5/source/audit_exclusions.py",
+      "sha256": "2c6dfa0e9fb91d3af5cde984160d32e2aa91146f6265ae28133b27f958715c4d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e5/source/run_packed.py",
+      "sha256": "717c7940dccd04d1ef8aeb980fee5b8a16d698e4d2d0a0d1f742993e1d04784f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/analyze_results.py",
+      "release_path": "frozen_source/c1-pre/e5/source/analyze_results.py",
+      "sha256": "c06a4a93a1580ac52cc1140164b49bbc5f7d6e0ce684c5cbfefe42e9fbace0ec"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/accept_results.py",
+      "release_path": "frozen_source/c1-pre/e5/source/accept_results.py",
+      "sha256": "99e107c2e4d74651aa52dbc2addb263c390f8c4ddc64f0ad1d8593fb1f144314"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/run_diagnosis.py",
+      "release_path": "frozen_source/c1-pre/e5/source/run_diagnosis.py",
+      "sha256": "7fa38a3148fb30d756efd74d20d0953b9458583791ade45b4cbd92c10f07a05c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/prepare_development.py",
+      "release_path": "frozen_source/c1-pre/e5/source/prepare_development.py",
+      "sha256": "df19330f4f8a6acbd21684644a84d16fb6ba46e1fed7e792c6be86528c841fb9"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e5/source/freeze_submit.py",
+      "sha256": "d69bf44e9c5ce3d9a23f0c10ffa53f12dd6336aafbf2213a651d78971890f7c7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5-measurement/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e5-measurement/source/run_packed.py",
+      "sha256": "3843d95e416b5c112fca2f7d60288a67b1ba506828303f83f44d28384aaf1a3b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5-measurement/source/measure.py",
+      "release_path": "frozen_source/c1-pre/e5-measurement/source/measure.py",
+      "sha256": "c82e9b434c8c1409376282ee0d627bded17466c842c001657e1f2637f7d71aac"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5-measurement/source/accept_analyze.py",
+      "release_path": "frozen_source/c1-pre/e5-measurement/source/accept_analyze.py",
+      "sha256": "7792667266fd8452af8a6b81fd753de0de5dd2d7ad87ad6fa28c164174ef61c4"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5-measurement/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e5-measurement/source/freeze_submit.py",
+      "sha256": "f54e94a29767f89535237349eadc3858769133bef65ae53154c1da52c867237f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e6/source/run_packed.py",
+      "sha256": "924c66a346fef8d47f6bcc9765accd4a5a972590219e6e970de85aaa9ecc3be6"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/check_rank_structure.py",
+      "release_path": "frozen_source/c1-pre/e6/source/check_rank_structure.py",
+      "sha256": "8b921b31f06702d41f5c77aa7d50dad56beb0cf8a803fb21e1acbbce2ab2280e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/calibrated_neuron.py",
+      "release_path": "frozen_source/c1-pre/e6/source/calibrated_neuron.py",
+      "sha256": "7925f39a7f6d3e97d7a21606c61fec6b0e3b1ea2eb9796d5b467a00a711f234c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/direction_gate.py",
+      "release_path": "frozen_source/c1-pre/e6/source/direction_gate.py",
+      "sha256": "c74ba6d5feac1cc06d1b5cb00bd6b72b6731df4f6b80204f8f111027a8fa387d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/analyze.py",
+      "release_path": "frozen_source/c1-pre/e6/source/analyze.py",
+      "sha256": "0fac59b39b1ce8b5b3ff5a48d18e9c6f98d02555ad189a452637e7ae2bdaa0d0"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/check_gate.py",
+      "release_path": "frozen_source/c1-pre/e6/source/check_gate.py",
+      "sha256": "283043c22bb312cef9130d2451ba3db9d20e301821f8e6675e308f7e5a950067"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/check_real_block.py",
+      "release_path": "frozen_source/c1-pre/e6/source/check_real_block.py",
+      "sha256": "f9cf1e2985f11e7ff3c0ad99eb5a336c0e420b62578411d22a29a4c6b6e90ca0"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/check_math.py",
+      "release_path": "frozen_source/c1-pre/e6/source/check_math.py",
+      "sha256": "195c42b27fd6f763329e522f07baf22706fca8f409849a4c57e95e130f14aca7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/run_method.py",
+      "release_path": "frozen_source/c1-pre/e6/source/run_method.py",
+      "sha256": "2ab96272b595efb1b1171e6a5e4b2c7a5fe94221e9e298a4c49fb62306d406f2"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e6/source/freeze_submit.py",
+      "sha256": "940103d8154b0cb34b499e473a31df88ef402321f371d34e020ba1081582fafd"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e6/source/check_integration.py",
+      "release_path": "frozen_source/c1-pre/e6/source/check_integration.py",
+      "sha256": "8f0083591aff573453b936adac726c2554f9190dd9ae83dea87262a3a8a0b6b2"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e7/source/run_diagnostic.py",
+      "release_path": "frozen_source/c1-pre/e7/source/run_diagnostic.py",
+      "sha256": "898765bd2cac850a5b0f408eb2defc6ed517fea0cfbe3298eab7daf57dfe508e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e7/source/check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e7/source/check_cpu.py",
+      "sha256": "dba0a0ae5512feb524939a4d15c15120327e5406e1c4568240e0d42cda3356e3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e7/source/solver.py",
+      "release_path": "frozen_source/c1-pre/e7/source/solver.py",
+      "sha256": "f1f39f09878b5c46a3240fbf4b2cfe950a5b721d06bbfc686a76787969457a31"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e7/source/accept_analyze.py",
+      "release_path": "frozen_source/c1-pre/e7/source/accept_analyze.py",
+      "sha256": "eb868fe6b7cce7cde19e22e6e50ea962124d4fba288c0040afb2fb51210b6ccf"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e7/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e7/source/freeze_submit.py",
+      "sha256": "8b49a318b216e250b09beff11adbbfc392748d311fb7d9b6bf2e7cae4d1d7c38"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e8/source/run_packed.py",
+      "sha256": "657be2603a8848f21144f27fe12f7c34630edb1d78d2df8f58820191b360816f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/source/check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e8/source/check_cpu.py",
+      "sha256": "862c4c72f1c3906c16081080dcd7d4b41e1d8c39b21e8b725274438c675b6836"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/source/accept_results.py",
+      "release_path": "frozen_source/c1-pre/e8/source/accept_results.py",
+      "sha256": "65c33405cea8a556a8c40d5697401e9782fd78166dab956bf7432526dbd7e5d3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/source/norm_match.py",
+      "release_path": "frozen_source/c1-pre/e8/source/norm_match.py",
+      "sha256": "da4a2b5f6fe4db768d7887f100e317f9a73c1995e2b2df5b51bb351d934d1b20"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/source/run_intervention.py",
+      "release_path": "frozen_source/c1-pre/e8/source/run_intervention.py",
+      "sha256": "53ff88e51fc60bb7c7a7adbe68e495dc03368e15a50aa5403727e742fe2352fa"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e8/source/freeze_submit.py",
+      "sha256": "34e77af8f4751870599c3f7a065a42a3681cb33c6138e63e7612381a554165f2"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e8/analyze.py",
+      "release_path": "frozen_source/c1-pre/e8/analyze.py",
+      "sha256": "39b0edb950a8be3df9b7896d536c16e11208650a9ad24d18e1dbdf360fb31c5a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/source/directions.py",
+      "release_path": "frozen_source/c1-pre/e9/source/directions.py",
+      "sha256": "bfb0d342cb73f8f0b9936592eecd715fd2601a1b2a01969795c041f45c20f103"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e9/source/run_packed.py",
+      "sha256": "657be2603a8848f21144f27fe12f7c34630edb1d78d2df8f58820191b360816f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/source/check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e9/source/check_cpu.py",
+      "sha256": "33dd898c1a8f56a962bccfe7ed4b355ac74940ede0e7541a85f5d3466da7bbc7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/source/accept_results.py",
+      "release_path": "frozen_source/c1-pre/e9/source/accept_results.py",
+      "sha256": "c6e283781ba45ebc2b113fc0e3cc46b359a1f879fe1b6e1f96e9033986d86cd1"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/source/run_intervention.py",
+      "release_path": "frozen_source/c1-pre/e9/source/run_intervention.py",
+      "sha256": "618179971e3c2e2a2bb38f2bc060443a3e348c5fffdaf86d78d88cec8845ca8e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e9/source/freeze_submit.py",
+      "sha256": "31f548f636a2aa63d9787d07fcaca3183f222cafbc8e6226a896f38f4338a813"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e9/analyze.py",
+      "release_path": "frozen_source/c1-pre/e9/analyze.py",
+      "sha256": "c6057e8367d4b8c87e0eb5d9009c06505ff26bca48cbf46d466ce67d56a2aadf"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e10/source/run_packed.py",
+      "sha256": "657be2603a8848f21144f27fe12f7c34630edb1d78d2df8f58820191b360816f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/source/surrogate.py",
+      "release_path": "frozen_source/c1-pre/e10/source/surrogate.py",
+      "sha256": "49155ff0d18d729f32e1fce87a8635cf24ddb7622b2204024d84d776e2eb6441"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/source/check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e10/source/check_cpu.py",
+      "sha256": "6012e787aa07c48497e8feb23224d93a0b9a54f0dd799ee8ccecdf259261c8a3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/source/accept_results.py",
+      "release_path": "frozen_source/c1-pre/e10/source/accept_results.py",
+      "sha256": "0c81d69007ccd5b919a10ab6f2e915f7320963f27ee4df4889eee4f21a10549d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/source/run_intervention.py",
+      "release_path": "frozen_source/c1-pre/e10/source/run_intervention.py",
+      "sha256": "4ca9cadf2553fee4557c5ae53ae0a67ab876d9705eda4b9dbed61cb4ee83536d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e10/source/freeze_submit.py",
+      "sha256": "d3cd42dfd676d70b512a107457c3a6c41331ec578b5afa020412246f2c15e032"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/analyze.py",
+      "release_path": "frozen_source/c1-pre/e10/analyze.py",
+      "sha256": "792ec7b5062c6b2198b646b436e5afea035a5ef780dd5741c7b7efd6f4102273"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e10/record_costs.py",
+      "sha256": "2da0f1a6b336e700666c897248d95277deb1fe61dd447fd32041b4120f62c9f0"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e10/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e10/verify_preservation.py",
+      "sha256": "798dbdf1a5b3e4cd1d8f13870390f86babe7db777d1a2c2ac96b32e885a9c5e8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/source/run_replay.py",
+      "release_path": "frozen_source/c1-pre/e11/source/run_replay.py",
+      "sha256": "6df6359e66e31b461821552727474775e33b732f912a0a41caba672991c3be15"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/source/run_packed.py",
+      "release_path": "frozen_source/c1-pre/e11/source/run_packed.py",
+      "sha256": "29b28014054765caab0bff461457a2cf123ff0ca6fb4692f3e5870d95fdd016a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/source/setup_and_cpu.py",
+      "release_path": "frozen_source/c1-pre/e11/source/setup_and_cpu.py",
+      "sha256": "c3f89f145ad707b37dfc4d143e1ec94009d6dd90d0edc53325eb3be6627891aa"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/source/accept_results.py",
+      "release_path": "frozen_source/c1-pre/e11/source/accept_results.py",
+      "sha256": "2b931ae5b485fb538df93925a619fad9d0280cbdd4a4269ec9555e14cdff5eb3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/source/trace_ops.py",
+      "release_path": "frozen_source/c1-pre/e11/source/trace_ops.py",
+      "sha256": "95254bbbb6c1d554837035581cb3228d2a649a7fe55170d63c161708743312e8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/source/freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e11/source/freeze_submit.py",
+      "sha256": "f934f2c5108c0662d48104a8c15a763e2787b4a094fe9fc6af1c374fc65146f2"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/analyze.py",
+      "release_path": "frozen_source/c1-pre/e11/analyze.py",
+      "sha256": "264ecd3274fc432a232102472054e292a39076e03bd95ad5fcd0a3540e7bf93b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e11/record_costs.py",
+      "sha256": "ab94d4e1ee2bcf8e5a62b3538a38d81646bdd1bc100128e9defee24807c3b19b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e11/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e11/verify_preservation.py",
+      "sha256": "798dbdf1a5b3e4cd1d8f13870390f86babe7db777d1a2c2ac96b32e885a9c5e8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/e12_accept.py",
+      "release_path": "frozen_source/c1-pre/e12/source/e12_accept.py",
+      "sha256": "1224d52f62a3a87cdcf47ec5857cb09ff3d1c09d82ea673d1007dfd82a02c99f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/e12_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e12/source/e12_freeze_submit.py",
+      "sha256": "c8204ecad7e2f990ee0cb632b25118157db07e3eef02eebffebaab0ea2126604"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/e12_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e12/source/e12_check_cpu.py",
+      "sha256": "d04790e89766b43fe45642fc4a94a45792bec659fff79b6b134570d80fa82ff4"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/e12_relative.py",
+      "release_path": "frozen_source/c1-pre/e12/source/e12_relative.py",
+      "sha256": "b36c2b3277b387382db108cb26f39d5163e887f557db8f9117f701a81902e8ea"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/e12_runner.py",
+      "release_path": "frozen_source/c1-pre/e12/source/e12_runner.py",
+      "sha256": "f2d49a4f282510f9a19c7d1b4eb3516db50d89b3a5d1d36d942fcfd48349fbd9"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/check_math.py",
+      "release_path": "frozen_source/c1-pre/e12/source/check_math.py",
+      "sha256": "161c14467d5ffaf306f452f8fe02faff83636ef86fecd9250ed254b86e41fddb"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/chunked_solver.py",
+      "release_path": "frozen_source/c1-pre/e12/source/chunked_solver.py",
+      "sha256": "8e0f3919bbd2c2190a9a833adccb75f1a39ddf7b58d3b18f05533f8352c90778"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/source/e12_bound_check.py",
+      "release_path": "frozen_source/c1-pre/e12/source/e12_bound_check.py",
+      "sha256": "d58ec23c88ae0ada5c2bbb71817082ddcfefbbd6365f5eba75cbdd5f3b1a32ca"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/summarize.py",
+      "release_path": "frozen_source/c1-pre/e12/summarize.py",
+      "sha256": "3f834606b88c9b0dfe3509e05547cce0af5f91fab179a45b141dca45a7254baa"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e12/record_costs.py",
+      "sha256": "181568eb7f485879c7576d033bc3c20d6c917ca46de92b2f35c8c7c5ea86dc5c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e12/verify_preservation.py",
+      "sha256": "5b20f58a95679ccfb0d898e52111d09a524289d7bef5c5bd766aa7a98c2eef66"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e12/tools/review_client.py",
+      "release_path": "frozen_source/c1-pre/e12/tools/review_client.py",
+      "sha256": "fee44e7f7978b4972308b50d97fac7155254066436905e076b91a319910606ba"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/serial_solver.py",
+      "release_path": "frozen_source/c1-pre/e13/source/serial_solver.py",
+      "sha256": "e17a3c5a7b81f484d384499c6a99f677702be6f258e20b84a19491199f62f62c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/e13_accept.py",
+      "release_path": "frozen_source/c1-pre/e13/source/e13_accept.py",
+      "sha256": "52d4c46759cc8e594b93c597a2f350e103e8a5c12bbd2b50ebee23f02ea00877"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/e13_runner.py",
+      "release_path": "frozen_source/c1-pre/e13/source/e13_runner.py",
+      "sha256": "c443fb04f286717009331fe8f67a7f73a1c378a43c85d991a7568ba182571bc3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/e13_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e13/source/e13_freeze_submit.py",
+      "sha256": "b68fac5f1e39ca89f5e13a7e3e5ee84d7aa628a5a89faf3d6e792f161605bc75"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/e13_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e13/source/e13_check_cpu.py",
+      "sha256": "748a9896cef71c1201c2610f9f5cb1d143bc4c1436f7ac2de64582053021c17f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/analysis-e0/schedule_effect.py",
+      "release_path": "frozen_source/c1-pre/e13/analysis-e0/schedule_effect.py",
+      "sha256": "e8aa6dddfc8d4e77bb678a077797388c818440cc00757d30ef60fa14cfb08b8e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/analysis-e0/schedule_oracle.py",
+      "release_path": "frozen_source/c1-pre/e13/analysis-e0/schedule_oracle.py",
+      "sha256": "310449aab4dc1a19d5fc33aab2ec494ab8bff15bbd0661e4fe6366023ad3a61a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/analysis-e0/linear_schedule.py",
+      "release_path": "frozen_source/c1-pre/e13/analysis-e0/linear_schedule.py",
+      "sha256": "f69d8a13934d1361b772997ee59f4bd0d9590c62b0b81000a7dfae4086c41a2b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/analysis-e0/local_error.py",
+      "release_path": "frozen_source/c1-pre/e13/analysis-e0/local_error.py",
+      "sha256": "7b9a4f8527bb59cb8b3bc3680f3f341d166da5865d6e5a6ee4e1e52f17137e77"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e13/tools/cpu_dryrun.py",
+      "sha256": "80391af8c7275ba6d571f687c3ba8eb54de38fcd095343e2d223669fa3b49832"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e1/calibration-export/serial.py",
+      "release_path": "frozen_source/c1-pre/e1/calibration-export/serial.py",
+      "sha256": "05ff89dd946dface9db87ee07a1d45a41532c0327a9038f2d13094031bd45439"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/audit_exclusions.py",
+      "release_path": "frozen_source/c1-pre/e14/source/audit_exclusions.py",
+      "sha256": "23dc455b44997ca27f75e3cdb5f64ce3e7c7fddc57651c3b1202bc007934fb11"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/e14_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e14/source/e14_check_cpu.py",
+      "sha256": "31cdaa6133eb2f8309bd6f7954e271521c50ff880f127d94ebc4c82c6d0f793a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/e14_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e14/source/e14_freeze_submit.py",
+      "sha256": "d0a213a11537cb906aac0a00df6f9f31578f94fcb1ae5be8847777af7d5e49bd"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/e14_runner.py",
+      "release_path": "frozen_source/c1-pre/e14/source/e14_runner.py",
+      "sha256": "2dde16d7989f61a53e8e3a89741f60e5a222732391446423262a3a67e01dd0ac"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/check_step_solver.py",
+      "release_path": "frozen_source/c1-pre/e14/source/check_step_solver.py",
+      "sha256": "b1ba94ec4cc6988a7c6275e73302c15edddd6491a546b5ab21889e9ac2c290ad"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/prepare_development.py",
+      "release_path": "frozen_source/c1-pre/e14/source/prepare_development.py",
+      "sha256": "317284f5c71a51c638a2cff5328b2b07e4919b823faa861e17c26fc9833d09b5"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/step_solver.py",
+      "release_path": "frozen_source/c1-pre/e14/source/step_solver.py",
+      "sha256": "ed618275064b59c89ddccaf44ec932732c3ac87925a41c4683a353e60337b884"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/e14_accept.py",
+      "release_path": "frozen_source/c1-pre/e14/source/e14_accept.py",
+      "sha256": "42866d313c809ab229bd344411314edb5c1dbd242ced866ce57243f176fb6b7f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e14/record_costs.py",
+      "sha256": "a545180313b174df7b5a7ec302fe63aeb1131191964be608dbd1f84308587865"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e14/verify_preservation.py",
+      "sha256": "f6aa1cc93e63697ad7a9fe1b49b9db310810352585620600ccab246c1d005cdf"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e14/tools/cpu_dryrun.py",
+      "sha256": "15aa64c3b52a18b0ff4ba40b74ab0b268afc9fb65da61e999a6dc019d0230f1e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/source/e15_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e15/source/e15_freeze_submit.py",
+      "sha256": "b23dbd45bcd3e6fe7358c44560f2555eff64ef12d04bf7334a754d2e5b5fa490"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/source/e15_accept.py",
+      "release_path": "frozen_source/c1-pre/e15/source/e15_accept.py",
+      "sha256": "cfb074b24fa0f575b23186d85da9f2e4a73b8032c8e6e43f0f3c40e97dd4cbf1"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/source/e15_runner.py",
+      "release_path": "frozen_source/c1-pre/e15/source/e15_runner.py",
+      "sha256": "b2f67649302706d0e077acff36f3d08e2865d80d63775495346c2ed6a7f243ab"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/source/e15_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e15/source/e15_check_cpu.py",
+      "sha256": "fa6072fba501bd44d11dcb23c03b3e28ed2fe5e0f038a428c3e74132ec0dd006"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/source/prepare_development.py",
+      "release_path": "frozen_source/c1-pre/e15/source/prepare_development.py",
+      "sha256": "1fb70fca8aed357df7e2d6be38634da66574952eda1f65ddea5ed53433e957e9"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e15/record_costs.py",
+      "sha256": "9dfb2dcb41e5ee191a8c684adb432b332003354449184e2dfcd4f1286ae53522"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e15/verify_preservation.py",
+      "sha256": "e8c0f49b7bac9456a27665a8c723d1340e921ef5a8ac081feb2cfc7e22d84e20"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e15/tools/cpu_dryrun.py",
+      "sha256": "159acfe19538ddfc963bd9fd0c261bbf6879d0ef20544d5815ab9a7375152298"
+    },
+    {
+      "original_path": "code/ftbc-eccv/QCFS/ANN_SNN_QCFS/main_cali.py",
+      "release_path": "frozen_source/workspace/code/ftbc-eccv/QCFS/ANN_SNN_QCFS/main_cali.py",
+      "sha256": "bbe2082d716c2b3acc20747a8adf47435a28eee7e935dcf3391eb478f504d8f4"
+    },
+    {
+      "original_path": "code/ftbc-eccv/QCFS/ANN_SNN_QCFS/Preprocess/getdataloader.py",
+      "release_path": "frozen_source/workspace/code/ftbc-eccv/QCFS/ANN_SNN_QCFS/Preprocess/getdataloader.py",
+      "sha256": "52b116dce2a0a38167b5b8cb28d24d95c7dff02a9dfd129aebe3ad508f62d3cd"
+    },
+    {
+      "original_path": "code/ftbc-eccv/QCFS/ANN_SNN_QCFS/Preprocess/__init__.py",
+      "release_path": "frozen_source/workspace/code/ftbc-eccv/QCFS/ANN_SNN_QCFS/Preprocess/__init__.py",
+      "sha256": "e3dd25a43bd6c8460be1b76cf7d1cfc6533d88d6957c85853ab607dd3927b6d8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/source/e16_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e16/source/e16_freeze_submit.py",
+      "sha256": "3aac6bf5c76d05053020d2c891d20dd7122284d48f4ce5da8d7034646f1c4a48"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e16/source/prepare_inputs.py",
+      "sha256": "30b75bfbc6aefb97f7f0ca5c9aeac8d2cb89b4e6b4f2e21179b0a9345294856f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/source/e16_runner.py",
+      "release_path": "frozen_source/c1-pre/e16/source/e16_runner.py",
+      "sha256": "0fa4d388dbfe7ac5edb538443e0424833eb2f17d2044f01c8b94bff421860e2f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/source/e16_accept.py",
+      "release_path": "frozen_source/c1-pre/e16/source/e16_accept.py",
+      "sha256": "de128c25bb4b6027a8d0100203049166e1ebe385b037ff69831b384d5d77883a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/source/e16_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e16/source/e16_check_cpu.py",
+      "sha256": "299063d95be3c4316e5a3859e0ab0dd4dc37e0c98b3fefe4f2a322417e920010"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e16/record_costs.py",
+      "sha256": "90bd0788059e0f016fbd6e2355c7825ef4601d0658fafcaad7c1ad327ffe5372"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e16/verify_preservation.py",
+      "sha256": "58e9bec789c7a2e545c4baf7a2645e3df893c2e17ef5a6b931c8dad4693b53df"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e16/tools/cpu_dryrun.py",
+      "sha256": "836b1a9168581b7f2944b3c9ac92d7bf41a1c151a1e18cd3864d3bdb5282d348"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/e17_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e17/source/e17_check_cpu.py",
+      "sha256": "cb5dfaa0668987ef5a954e5fc7bc2871949d2760976949306f8f413a4602bcc9"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/e17_runner.py",
+      "release_path": "frozen_source/c1-pre/e17/source/e17_runner.py",
+      "sha256": "00004e5f4a050ee93db4b9e7c75f9b016b8b43a2159c195408f85edc76b772cc"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e17/source/prepare_inputs.py",
+      "sha256": "0ce0bf7f6d2fdfbbf230c7da9efb58323ee97eb33a5654627bafe8bf81f2175d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/ce_solver.py",
+      "release_path": "frozen_source/c1-pre/e17/source/ce_solver.py",
+      "sha256": "9dd95d096e7136b0ebce743dc98b59c1d997b782f06407f229bd431fb3f4b103"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/e17_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e17/source/e17_freeze_submit.py",
+      "sha256": "a7b6fb0139ba56f4cbeead69945bfd0e56a1fb9c679695960fac0e9f82b562e6"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/check_ce_solver.py",
+      "release_path": "frozen_source/c1-pre/e17/source/check_ce_solver.py",
+      "sha256": "21109b36782f21fe83ef9165896ca943243b6a0136426f474ff8e6828b04fd3f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/e17_accept.py",
+      "release_path": "frozen_source/c1-pre/e17/source/e17_accept.py",
+      "sha256": "49af3f3662e72511d3da3d16a36b09e63a50b7a9257c91da0998162e25660afc"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e17/record_costs.py",
+      "sha256": "73dd1337a8be4c6f53a1f73aa6a49ef89982e5b53221c6e54b557b4776c82e91"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e17/verify_preservation.py",
+      "sha256": "7c6458b006767c9f50b1fd8cf0cc36335b4e6ea78b363c4066fff100bfc9432e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e17/tools/cpu_dryrun.py",
+      "sha256": "703c8c674ce5d0f12f6f568bf194a15a7c5aa79cba76f62206f7697cdb01ead8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/ftbc_variants.py",
+      "release_path": "frozen_source/c1-pre/e19/source/ftbc_variants.py",
+      "sha256": "53dd6992a1fee17380aff91f29fc2bec7ef4cb4c363b48eaa8868cd88f21b9a4"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e19/source/prepare_inputs.py",
+      "sha256": "8150ab22c4d1ab01d9d7d5366fe090d24ff90fd23a3e67169cb5b0ed83361479"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/e19_accept.py",
+      "release_path": "frozen_source/c1-pre/e19/source/e19_accept.py",
+      "sha256": "41f8e8ee871ce1362067ce9999dd640d0f7e07ce13d8416212fbb49f573c5a08"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/e19_job.py",
+      "release_path": "frozen_source/c1-pre/e19/source/e19_job.py",
+      "sha256": "4cfe9db4a73c6eee5ecefd5562866ab8875a13dc42eb04c51113b2d4a9360fa6"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/e19_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e19/source/e19_freeze_submit.py",
+      "sha256": "d92639307747c2c990ca0a2ddc795b0371375bba0eb81989fd8f3d039577eefd"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/e19_runner.py",
+      "release_path": "frozen_source/c1-pre/e19/source/e19_runner.py",
+      "sha256": "9e34a42d1761f7d3323bc132e9e99dc8ac3d5dd9661c02b943cb7cf2387ef3c9"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/check_variants.py",
+      "release_path": "frozen_source/c1-pre/e19/source/check_variants.py",
+      "sha256": "56c272871f0a070b68b9514af0e5289262f058128ad1fd3336541cede3776073"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/source/e19_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e19/source/e19_check_cpu.py",
+      "sha256": "4711e7b276e6f7c5b6d25d3b4c16c89200a02f049fcb519d081d4a29c727957f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e19/record_costs.py",
+      "sha256": "f1045d12a8a2d01a45ea8d6483be9e107fd16ca89f30777d3185a2ff1a2e3a2a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e19/verify_preservation.py",
+      "sha256": "726f736c42fa1678ea18e979b84514aeef6aa5585e9ebddaaa5e8d9930fc177f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e19/tools/cpu_dryrun.py",
+      "sha256": "0163d00f03c183264bbcf8c6afb6587b22edce8deb9425519370524b8440b23d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/e18_accept.py",
+      "release_path": "frozen_source/c1-pre/e18/source/e18_accept.py",
+      "sha256": "fd63fd2ab6ea22f47dc28a61511ed9b970328e9a8d77e0202b11508e8070cc4f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e18/source/prepare_inputs.py",
+      "sha256": "f6c1acd8d94a08b17f7a9d7c8ae8266b0c2661faa1853df5da3a7c703ff835ea"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/e18_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e18/source/e18_freeze_submit.py",
+      "sha256": "7439d6eb32406987b8cb7ecacecc3a763239c5f86d70806bc3ad8416a4c1396b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/e18_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e18/source/e18_check_cpu.py",
+      "sha256": "fefa296f07ebb94ea81122d588b8baa7e963e0813570a44f1a80c9ae0502a88f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/e18_job.py",
+      "release_path": "frozen_source/c1-pre/e18/source/e18_job.py",
+      "sha256": "a713a9ec34bef7bfde0cd741c039f6efc93deae969fc5c6105bbc9c369fb2692"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/e18_runner.py",
+      "release_path": "frozen_source/c1-pre/e18/source/e18_runner.py",
+      "sha256": "e1ed4bf9a9fe4fa4fbb2d90e9dace4b80167022f3071f5efc4b5c39345693ae3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e18/record_costs.py",
+      "sha256": "0031e383ab9a5fd71fa43d1b0a490f0f010209e4e656f2a16f711e9b39837a5c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e18/verify_preservation.py",
+      "sha256": "e29f63230c572be30b9e3b1d576d996149619f09fe2001b0220ccc82b8821906"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e18/tools/cpu_dryrun.py",
+      "sha256": "1602f8c0049f714cb2e6e5db2a44291d165e26ddabdabe329c8da947759b6d62"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_freeze_submit.py",
+      "sha256": "c9d62a6d73428545ab9cf7a62ae1459cbda6a8661f1491955069019f29fc7099"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_vgg_runner.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_vgg_runner.py",
+      "sha256": "73672affa5a20c374222d11c3d9adb976779780be7affec73d861a66746e0157"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e20/source/prepare_inputs.py",
+      "sha256": "62dd995473256fb03ab5aecb3adf50550b3c2277285785d2fafb22e70dc6383c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_job.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_job.py",
+      "sha256": "bb13f7e1ba10a91c63cd22c57e6117bc18f704aa1824e499c149d10f099a2c86"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_check_cpu.py",
+      "sha256": "d9d6273c21f681fdb8c8aa0b7ed04a712c69302faa0bf347f92711342798ec40"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_r34_runner.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_r34_runner.py",
+      "sha256": "a03b3bc11cb9ba590239ea3ff56dbaca1bd958317e8448e22c6963223eef06a3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/check_memory.py",
+      "release_path": "frozen_source/c1-pre/e20/source/check_memory.py",
+      "sha256": "c577f41f60630e856c3778185fffe7b3cc545e472caeee004d7770c21a19b8d0"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_vgg_accept.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_vgg_accept.py",
+      "sha256": "b3f2731632df0278998d236b4855dedfee89b97a31cddda1a49b2ffe96ff688f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/source/e20_r34_accept.py",
+      "release_path": "frozen_source/c1-pre/e20/source/e20_r34_accept.py",
+      "sha256": "1d46361bf1495d0cd59add61d68ef6ab384fa79a4cb0a26f923b8bae0f71611c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e20/record_costs.py",
+      "sha256": "fdd0156079edd3e200b27c5a1a501a39c7b679515392eeb0ae3d35df4674ad1a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e20/verify_preservation.py",
+      "sha256": "636bdf64dbf834edf94fb0b296259a5844a0c45738806b72d5e5283925f052f3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e20/tools/cpu_dryrun.py",
+      "sha256": "886f4454ad6f7504ffdc5b20ccb59d1ba5d10918b359c74df0e99c40521f0dae"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/memwatch/sitecustomize.py",
+      "release_path": "frozen_source/c1-pre/e20/memwatch/sitecustomize.py",
+      "sha256": "fadc15d3fe75564af484cf88dd018202d5d59a510517294fc80875386fafa4b3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e22/source/prepare_inputs.py",
+      "sha256": "b15edb9c3c011b52372d9a38468bfd216a454447797c28fd10f03de152c2fd3d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_vgg_accept.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_vgg_accept.py",
+      "sha256": "fcd837de9889633e28c33af30f0a6b54ef2d83460ebfcc254ef42afd6c6de9a8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_check_cpu.py",
+      "sha256": "ce59089410755c8414d02b1be10281f0e9c7a24e6d2130a57059294863ed7526"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_r34_accept.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_r34_accept.py",
+      "sha256": "efc058229578eb3d869bcc1dd01bb17cc689caae60a5dd0172a49a8bf737a6a5"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/tpp_neuron.py",
+      "release_path": "frozen_source/c1-pre/e22/source/tpp_neuron.py",
+      "sha256": "f63bde1908b864cbf4be326aef36535482026165136f3932833de489739297a3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_vgg_runner.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_vgg_runner.py",
+      "sha256": "04328354a89923c98fcc86c13f97b9a42d87a36f9fbd41684aba624cf35fbf19"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_freeze_submit.py",
+      "sha256": "befab0678fd41aed94ca4bbee473cd1f88664fcbff9b6c6dea0d267cc0d630e9"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/check_memory.py",
+      "release_path": "frozen_source/c1-pre/e22/source/check_memory.py",
+      "sha256": "fa6d397c5022bec0aa652dc5176416d76294ef617354bd04a368824ac0327688"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_r34_runner.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_r34_runner.py",
+      "sha256": "f0ec168254159e6c346b173372a9f26ddd2dd7e355c6ad17eeca05cd9e4b5358"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/source/e22_job.py",
+      "release_path": "frozen_source/c1-pre/e22/source/e22_job.py",
+      "sha256": "7382cf2f091f1f6281b3ae07f70c044dc987126962419cdbf1e6c42e27b1cbc2"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e22/record_costs.py",
+      "sha256": "d675db45aef9d32e61bd3e2841ba7f04f000f4ca475790788ad6b3334aff445a"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e22/verify_preservation.py",
+      "sha256": "de370aa3c8cfb2e0093b88918e25ff554c6340bffe207192fbfcdb7530d1444b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e22/tools/cpu_dryrun.py",
+      "sha256": "2f80fe0738992fb6f97017d70d8ba2662707b42477918364c040190ba911c8a4"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/memwatch/sitecustomize.py",
+      "release_path": "frozen_source/c1-pre/e22/memwatch/sitecustomize.py",
+      "sha256": "c8e65c698e1d41be9ff47f7160a7dbc40f6f802738d81ca949466d6b2bd7ef53"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/third_party/tpp-drive-20261010/Models/layer.py",
+      "release_path": "frozen_source/c1-pre/e22/third_party/tpp-drive-20261010/Models/layer.py",
+      "sha256": "265642cd973fae0ad3c4fc5366612ed74f9f0c7774b5d4886cc7b5c6f797111f"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_r34_accept.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_r34_accept.py",
+      "sha256": "0572f0e7573d1f44c0b4184c118ec647ec375fa5ef82c4df975a4835a0d729e7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e23/source/prepare_inputs.py",
+      "sha256": "dd62b0621db6b74bb55fefcef48b466d4d4d774827544ac996d199c614a85f0b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_r34_runner.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_r34_runner.py",
+      "sha256": "256fb8be5b7991e3b9798b6c027ccd72c856478f52480d9ca17989baa95c8843"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_check_cpu.py",
+      "sha256": "42ea48f2fe80f0324780134547438048580cb4f3782721b38c9f733c73f3eb7c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_timing.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_timing.py",
+      "sha256": "13d4556a28f6b56b40b9a82e9accb0b28e8d7fcc1e6011375edf68d23e3f7879"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_vgg_runner.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_vgg_runner.py",
+      "sha256": "e6f21b7e53e0d0f0bf55f458b680ab1583a8ff45c6e6cfa1deeecc821527fae7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_freeze_submit.py",
+      "sha256": "fc3569dce3801f4dc6973cbd5dd4ad4dc3d5c982208dc260340ab5a42d26bd5d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/check_memory.py",
+      "release_path": "frozen_source/c1-pre/e23/source/check_memory.py",
+      "sha256": "990329410a7d926ca89c9594faef1c1e7e6adde1716f5197b0094049e4e78375"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_vgg_accept.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_vgg_accept.py",
+      "sha256": "0d300538c5f958aa730ef6b052c8f310d517f9dde757802c870243a67fd02a09"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_job.py",
+      "release_path": "frozen_source/c1-pre/e23/source/e23_job.py",
+      "sha256": "c1aada55a8f9569a5a79b6259a911becac658eb30b2cc0c6b83ca0f09fc83d56"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e23/record_costs.py",
+      "sha256": "3b976ea07a268489582d63d248db22da5f45abd4a1b461878d1a3ed91398f74c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e23/verify_preservation.py",
+      "sha256": "e95e8e0466f6e036481a1fdfcfe904dd6576802d8da616d2e2b084da15d2c342"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e23/tools/cpu_dryrun.py",
+      "sha256": "033ab36feafa13108c6e59b52c1474119a5df6e7f870ff9287bff82ac3e2aaa5"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/tools/unit_checks.py",
+      "release_path": "frozen_source/c1-pre/e23/tools/unit_checks.py",
+      "sha256": "72a270519b81eb3347d14fdfacfe18694bdcec36e710936db2adf73753ec33ae"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/memwatch/sitecustomize.py",
+      "release_path": "frozen_source/c1-pre/e23/memwatch/sitecustomize.py",
+      "sha256": "573f5b8f5f393044c1bb7d208198a812f8abd5c3d952a7d69824042002d2b62b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/release_chunked.py",
+      "release_path": "frozen_source/c1-pre/e29/source/release_chunked.py",
+      "sha256": "2d82d1b15b555e5ba9e894c30f5d6c38b0b5aca831d46825be6d971ff2b00348"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/e29_job.py",
+      "release_path": "frozen_source/c1-pre/e29/source/e29_job.py",
+      "sha256": "cb29cbc707e5fb2ae0e051abb7a203763f2443836e035893bcc5be76b8838c8e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/e29_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e29/source/e29_freeze_submit.py",
+      "sha256": "66c7d03877beb980b5d59f73d5cb02564356bdbe9cff9d5e4dc65a9fcb1196ee"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/e29_runner.py",
+      "release_path": "frozen_source/c1-pre/e29/source/e29_runner.py",
+      "sha256": "6e008c11d9f3077c6db8bd18099b492e5167a30cf3745a4fd5fee857bde456d1"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/e29_accept.py",
+      "release_path": "frozen_source/c1-pre/e29/source/e29_accept.py",
+      "sha256": "0f1ed6cd74852781d3de31db7e854cc2eb5f135272baec36f2ed262531ad66b7"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/e29_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e29/source/e29_check_cpu.py",
+      "sha256": "a3f043a826e286d94c1827ba4135528b28991766d6fef72ff3eab08227567488"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e29/record_costs.py",
+      "sha256": "2765dda8f6dbee4feaeb4bac463769b9865f4cf78377b541c42559540cf5a440"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e29/verify_preservation.py",
+      "sha256": "f6b9b7e86731fbae22da8d418fb8bfe1f2791d1d3385a591b18ba6ec11bde2ee"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e29/tools/cpu_dryrun.py",
+      "sha256": "ab90fe4f68d3b631503d2aeabd287aab5e49236e471e599ff52290f30d1c43c3"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/tools/unit_checks.py",
+      "release_path": "frozen_source/c1-pre/e29/tools/unit_checks.py",
+      "sha256": "34c97aed881179ed134f67bfefc59f7fbe4480e61258dc84b0446390acd04538"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/e25_freeze_submit.py",
+      "release_path": "frozen_source/c1-pre/e25/source/e25_freeze_submit.py",
+      "sha256": "74b7b2abab01a8d664613b7b1fd2c9b8aed4d11f91d9604f93022be2f93fe079"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/prepare_inputs.py",
+      "release_path": "frozen_source/c1-pre/e25/source/prepare_inputs.py",
+      "sha256": "7787b7f0c56f0b3c2c568a09b44132a48e49b094ad5bb4ed721f20ed232581de"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/e25_accept.py",
+      "release_path": "frozen_source/c1-pre/e25/source/e25_accept.py",
+      "sha256": "a4ec99336c04156c922aeb11dc1ed9ec77e38dae6400fa9aadff95b32c88e4d4"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/cifar_e0.py",
+      "release_path": "frozen_source/c1-pre/e25/source/cifar_e0.py",
+      "sha256": "6b222a3521e3d9c945661ab500169d0ced126739ee5aaa1d9070687b4a3dd2a1"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/e25_check_cpu.py",
+      "release_path": "frozen_source/c1-pre/e25/source/e25_check_cpu.py",
+      "sha256": "2f8e21d3bbcaed9e35c47c5e5c5e36908e55cce66430aa1c70159b674eb13237"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/e25_job.py",
+      "release_path": "frozen_source/c1-pre/e25/source/e25_job.py",
+      "sha256": "f3f8fa0874afeb687bfb1b6f14a8eda584ac1ec70f4d615b7b364b71dbd1e831"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/e25_runner.py",
+      "release_path": "frozen_source/c1-pre/e25/source/e25_runner.py",
+      "sha256": "b0fe0df820ebd94f55947b82225fdb4c33fd2e9c20417cfa7c981d5f6aaebef1"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/record_costs.py",
+      "release_path": "frozen_source/c1-pre/e25/record_costs.py",
+      "sha256": "4a354bba7788b100abad8509dee62762ecdb712a1ad6ec96603da9a4cc52caf8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/verify_preservation.py",
+      "release_path": "frozen_source/c1-pre/e25/verify_preservation.py",
+      "sha256": "ee148180c671f01c2ca79f8ec57994af1838234f1fa9360ce48cba9333eb7953"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/c1-pre/e25/tools/cpu_dryrun.py",
+      "sha256": "fc8a098b986f5d4283c5552c74d9371864f5d31f40e774e14d792c9fb5e5c12d"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/tools/make_configs.py",
+      "release_path": "frozen_source/c1-pre/e25/tools/make_configs.py",
+      "sha256": "9183dafd3a06ac83252f37e824f69538e3acb8ce474f535762243d82ba1b1371"
+    },
+    {
+      "original_path": "code/ftbc-eccv/QCFS/ANN_SNN_QCFS/Preprocess/augment.py",
+      "release_path": "frozen_source/workspace/code/ftbc-eccv/QCFS/ANN_SNN_QCFS/Preprocess/augment.py",
+      "sha256": "6b7302c03c377b78364bb319a05332841752684bad1bdb9fbd5b07bcf606dc6b"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/l1_freeze_submit.py",
+      "release_path": "frozen_source/locked-eval-v2/source/l1_freeze_submit.py",
+      "sha256": "92d8af85b85ef56273220442aa107d5545d3203cdd4c2b9557038d0e3ac9e08c"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/l1_accept.py",
+      "release_path": "frozen_source/locked-eval-v2/source/l1_accept.py",
+      "sha256": "4999518fadf75cf327cb5d25d959febbcf2a07a73de5dab60d581cdb67f738af"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/prepare_inputs.py",
+      "release_path": "frozen_source/locked-eval-v2/source/prepare_inputs.py",
+      "sha256": "0a0c465e74b502273c1c6e5cb457536254fdb8c64748a55bd58e72b28ab9a539"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/make_configs.py",
+      "release_path": "frozen_source/locked-eval-v2/source/make_configs.py",
+      "sha256": "685bfba725a0f3dbc912d627d0fc1b8c5cbcd980668199ffce10e4f3b35b0010"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/cifar_test.py",
+      "release_path": "frozen_source/locked-eval-v2/source/cifar_test.py",
+      "sha256": "bff36cd84176ac1c8b9a14c1cb4ffbf2620415348613779906f3426919e8c817"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/l1_job.py",
+      "release_path": "frozen_source/locked-eval-v2/source/l1_job.py",
+      "sha256": "13468421f9a631466245da45aca0c78e57bec3fc1b5995cd7dc1b9e8e89e09a8"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/l1_cifar_runner.py",
+      "release_path": "frozen_source/locked-eval-v2/source/l1_cifar_runner.py",
+      "sha256": "7066124d4f145cd0289f2c9d45fb5650561bf8f9ddb9ee2ec1777c0740b89d83"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/l1_check_cpu.py",
+      "release_path": "frozen_source/locked-eval-v2/source/l1_check_cpu.py",
+      "sha256": "e57f2cd832c45386d6e41196df7ab3bd13c75d770fb32e7cc74fac8acec3a999"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/l1_imagenet_runner.py",
+      "release_path": "frozen_source/locked-eval-v2/source/l1_imagenet_runner.py",
+      "sha256": "19aa2b7c1c4a15e3c79b4c8e806016d02ae8bc15abe85f94ab0380186dd2c00e"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/record_costs.py",
+      "release_path": "frozen_source/locked-eval-v2/record_costs.py",
+      "sha256": "3e077c275204b7bc257560372084a348ccfbd46c34fdc708206f9fb3ab756cfb"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/verify_preservation.py",
+      "release_path": "frozen_source/locked-eval-v2/verify_preservation.py",
+      "sha256": "5a640a609a0b36326f8a43ef02e2e65b9c768f427aad80aeb22c359886d25d24"
+    },
+    {
+      "original_path": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/tools/cpu_dryrun.py",
+      "release_path": "frozen_source/locked-eval-v2/tools/cpu_dryrun.py",
+      "sha256": "502a95e1eb48c6b4dd499ba5c26ad9e44dd14941bfa7b61ba7f74c76ace2295a"
+    }
+  ],
+  "original_acceptance_records": [
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-resnet20-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-vgg16-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-resnet20-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-vgg16-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/r34-t2-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/r34-t4-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/r34-t8-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/vgg-t2-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/vgg-t4-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/vgg-t8-main-acceptance.json"
+  ],
+  "new_model_experiments": false,
+  "scope": "Existing frozen source, recorded results and configurations; CPU result aggregation and solver checks. Exact weights and original deployment artifacts are not redistributed."
+}

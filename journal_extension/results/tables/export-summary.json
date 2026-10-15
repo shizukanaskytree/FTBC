@@ -1,0 +1,27 @@
+{
+  "source_records": [
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/r34-t2-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/r34-t4-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/r34-t8-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/vgg-t2-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/vgg-t4-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/vgg-t8-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-resnet20-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-vgg16-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-resnet20-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-vgg16-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/input/imagenet-calibration.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/input/cifar10-calibration.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/input/cifar100-calibration.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/r34-main-acceptance.json",
+    "ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/vgg-main-acceptance.json"
+  ],
+  "comparison_rows": 261,
+  "primary_rows": 54,
+  "settings": 18,
+  "calibration_rows": 864,
+  "checkpoints": 6,
+  "cost_rows": 24,
+  "new_model_execution": false,
+  "frozen_labels_preserved": true
+}

@@ -1,0 +1,4 @@
+generated/
+__pycache__/
+*.pyc
+frozen_source/c1-pre/e14/cache/

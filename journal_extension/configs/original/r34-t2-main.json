@@ -1,0 +1,106 @@
+{
+ "workspace": "/data3/snn_prjs/ftbc_neural_networks",
+ "e0_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source/run_probe.py",
+ "e13_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/e13_runner.py",
+ "e14_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/e14_runner.py",
+ "e13_output": "/data7/projects/ftbc_neural_networks_outputs/c1pre-e13-20261009/main-v1",
+ "parent_config": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/config/serial.json",
+ "plain_deployment": "/data5/ftbc_neural_networks/runs/c1pre-order-e0-20261008/serial/deployment-plain.pt",
+ "plain_proxy": "/data5/ftbc_neural_networks/runs/c1pre-order-e0-20261008/serial/proxy-plain.pt",
+ "e0_predictions": "/data5/ftbc_neural_networks/runs/c1pre-order-e0-20261008/serial/predictions.pt",
+ "calibration_export": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e1/calibration-export/serial.py",
+ "calibration_export_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e1/calibration-export/manifest.json",
+ "allowed_uuids": [
+  "GPU-08d042a1-efba-a7d5-657e-8543e26f3154",
+  "GPU-007d796e-235b-fa1b-f840-8387fa0d6894",
+  "GPU-4bfc38ec-7b5c-032d-993e-16750f4fe211"
+ ],
+ "seed": 20261009,
+ "solver_batch": 8,
+ "bisection_steps": 32,
+ "bound_ratio": 0.5,
+ "schedule_sweeps": 3,
+ "ftbc_alpha": 0.4,
+ "score_roles": [
+  "fresh",
+  "development"
+ ],
+ "perturb_batch": 8,
+ "ftbc_arms": [
+  [
+   "F0-n3",
+   3,
+   0.4
+  ]
+ ],
+ "ftbc_ns": [
+  3
+ ],
+ "f1_n": 3,
+ "e13_anchor": false,
+ "fit_count": 256,
+ "e15_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/source/e15_runner.py",
+ "freeze_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/protocol-freeze.json",
+ "fresh_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/input/fresh-development.json",
+ "fresh_manifest_sha256": "e66f927ab5fc74be4e925237213471a022fb5708ddd57a3aef2083f99ef19656",
+ "calibration_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/input/imagenet-calibration.json",
+ "calibration_manifest_sha256": "5f3ad9e02b6677d9fbf9a1a174d75c21d924d408a375a476523da36a25372452",
+ "previous_fresh_manifests": [
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e15/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e21/input/fresh-development.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/input/fresh-development.json"
+ ],
+ "e0_artifacts": "/data5/ftbc_neural_networks/runs/c1pre-order-e0-20261008/serial/artifacts.json",
+ "e5_roles": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e5/input-roles.json",
+ "draw_n": 128,
+ "small_n": 96,
+ "fit_small": 96,
+ "ftbc_batch": 32,
+ "dev_count": 8,
+ "diag_count": 64,
+ "fresh_count": 16,
+ "sanity": false,
+ "output": "/data7/projects/ftbc/runs/locked-eval-v2-20261011/r34-t2-main-v1",
+ "e16_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/source/e16_runner.py",
+ "ce_solver": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/ce_solver.py",
+ "previous_calibration_manifests": [
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e16/input/calibration-rows.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/input/calibration-rows.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/input/calibration-rows.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e19/input/calibration-rows.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e20/input/calibration-rows.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e21/input/calibration-rows.json",
+  "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e22/input/calibration-rows.json"
+ ],
+ "e17_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e17/source/e17_runner.py",
+ "sizes": [
+  32,
+  96
+ ],
+ "release_n": 3,
+ "release_batch": 200,
+ "release_seed": 2026101140,
+ "model": "r34",
+ "T": 2,
+ "e23_r34_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e23/source/e23_r34_runner.py",
+ "release_chunked": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e29/source/release_chunked.py",
+ "tuned": {
+  "alpha": 0.3,
+  "passes": 1
+ },
+ "release_mode": "skip",
+ "tiny_n": 32,
+ "release_chunk": 50,
+ "evaluation_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/input/imagenet-val.json",
+ "evaluation_key": "evaluation",
+ "evaluation_n": 50000,
+ "evaluation_manifest_sha256": "c8d82821bbcba086ff15c7d1bffec6372518cd5b1992f83d88b4ae26fe06e4e3",
+ "evaluation_batch_size": 50,
+ "evaluation_workers": 12
+}

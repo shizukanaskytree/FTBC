@@ -1,0 +1,98 @@
+[
+  {
+    "job": "r34-t2",
+    "gpu": "NVIDIA H100",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {}
+  },
+  {
+    "job": "r34-t4",
+    "gpu": "NVIDIA H100",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {}
+  },
+  {
+    "job": "r34-t8",
+    "gpu": "NVIDIA H100",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {}
+  },
+  {
+    "job": "vgg-t2",
+    "gpu": "NVIDIA H100",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {}
+  },
+  {
+    "job": "vgg-t4",
+    "gpu": "NVIDIA H100",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {}
+  },
+  {
+    "job": "vgg-t8",
+    "gpu": "NVIDIA H100",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {}
+  },
+  {
+    "job": "c10-resnet20",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {
+      "numpy": "2.2.6",
+      "PIL": "12.0.0",
+      "torchvision": "0.20.0+cu124"
+    }
+  },
+  {
+    "job": "c10-vgg16",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {
+      "numpy": "2.2.6",
+      "PIL": "12.0.0",
+      "torchvision": "0.20.0+cu124"
+    }
+  },
+  {
+    "job": "c100-resnet20",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {
+      "numpy": "2.2.6",
+      "PIL": "12.0.0",
+      "torchvision": "0.20.0+cu124"
+    }
+  },
+  {
+    "job": "c100-vgg16",
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "torch": "2.5.0+cu124",
+    "cuda_runtime": "12.4",
+    "cudnn": 90100,
+    "additional_recorded_versions": {
+      "numpy": "2.2.6",
+      "PIL": "12.0.0",
+      "torchvision": "0.20.0+cu124"
+    }
+  }
+]
