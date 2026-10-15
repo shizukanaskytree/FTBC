@@ -1,0 +1,97 @@
+{
+ "workspace": "/data3/snn_prjs/ftbc_neural_networks",
+ "e13_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/e13_runner.py",
+ "e18_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e18/source/e18_runner.py",
+ "cifar_e0": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/cifar_e0.py",
+ "step_solver": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e14/source/step_solver.py",
+ "serial_solver": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e13/source/serial_solver.py",
+ "calibration_export": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e1/calibration-export/serial.py",
+ "calibration_export_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e1/calibration-export/manifest.json",
+ "source_snapshot": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/source-snapshot/serial",
+ "source_checkpoint": "/data3/snn_prjs/ftbc_neural_networks/code/parallel-conversion/checkpoints/cifar100-vgg16/source_ann/cifar100-vgg16-l8-example.pth",
+ "source_checkpoint_sha256": "8da450ef6f867da8b35a092d6de080933d3873ad012978507783b7f8d6ef6339",
+ "checkpoint_key": null,
+ "source_level": 8,
+ "interfaces": 15,
+ "dataset": "cifar100",
+ "num_classes": 100,
+ "arch": "vgg16",
+ "preparation": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/input/preparation.json",
+ "preparation_sha256": "a681894fdfa0a85359f521f1c2e6b2dbb5056a73c18a6f34dc92f36f37ce8785",
+ "rows_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/input/cifar100-rows-for-e25-constructor.json",
+ "rows_manifest_sha256": "bc01c057a8846c481af1c8f072c12f2a7cc017f22e22a418aa0c04268e3f239f",
+ "output": "/data7/projects/ftbc/runs/locked-eval-v2-20261011/c100-vgg16-main-v1",
+ "freeze_manifest": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/protocol-freeze.json",
+ "allowed_uuids": [
+  "GPU-08d042a1-efba-a7d5-657e-8543e26f3154",
+  "GPU-007d796e-235b-fa1b-f840-8387fa0d6894",
+  "GPU-4bfc38ec-7b5c-032d-993e-16750f4fe211"
+ ],
+ "seed": 20261025,
+ "solver_batch": 32,
+ "bisection_steps": 32,
+ "bound_ratio": 0.5,
+ "ftbc_alpha": 0.4,
+ "alphas": [
+  0.05,
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.6,
+  0.8,
+  1.2
+ ],
+ "Ts": [
+  2,
+  4,
+  8
+ ],
+ "score_roles": [
+  "fresh"
+ ],
+ "release_alpha": 0.4,
+ "release_seed": 2026101142,
+ "eccv_alpha": 0.5,
+ "eccv_batch": 2,
+ "eccv_batches": 50,
+ "num_workers": 0,
+ "sanity": false,
+ "gpu_mem_cap_gib": 15,
+ "dev_count": 16,
+ "draw_n": 600,
+ "small_n": 96,
+ "ftbc_batch": 32,
+ "p0_sizes": [
+  32,
+  96,
+  256
+ ],
+ "m0_size": 96,
+ "release_n": 600,
+ "release_batch": 200,
+ "eval_batch_size": 200,
+ "tag": "c100-vgg16",
+ "e25_runner": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/c1-pre/e25/source/e25_runner.py",
+ "cifar_test": "/data3/snn_prjs/ftbc_neural_networks/ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/source/cifar_test.py",
+ "tuned": {
+  "T2": {
+   "alpha": 0.8,
+   "passes": 1
+  },
+  "T4": {
+   "alpha": 0.3,
+   "passes": 3
+  },
+  "T8": {
+   "alpha": 0.8,
+   "passes": 1
+  }
+ },
+ "tiny_n": 32,
+ "release_mode": "skip",
+ "evaluation": "test",
+ "test_file": "/data3/snn_prjs/ftbc_neural_networks/code/parallel-conversion/downloaded_dataset/cifar-100-python/test",
+ "test_file_sha256": "4b67687d9933c4db8f0831104447f15b93774f4f464bd0516f0f0f2ac83b7864",
+ "evaluation_n": 10000
+}

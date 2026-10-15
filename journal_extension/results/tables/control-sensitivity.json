@@ -1,0 +1,288 @@
+{
+  "settings": 12,
+  "different_outcomes": 7,
+  "selected_fewer": 6,
+  "selected_more": 1,
+  "source": "paired-comparisons.csv",
+  "frozen_records_verified": true,
+  "frozen_record_count": 4,
+  "new_model_execution": false,
+  "details": [
+    {
+      "dataset": "CIFAR-10",
+      "model": "ResNet-20",
+      "T": 2,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          false,
+          false,
+          false
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 0,
+      "other_qualifying_draws": 0,
+      "different": false,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-resnet20-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-10",
+      "model": "ResNet-20",
+      "T": 4,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          false,
+          false,
+          false
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 0,
+      "other_qualifying_draws": 0,
+      "different": false,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-resnet20-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-10",
+      "model": "ResNet-20",
+      "T": 8,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          false,
+          false,
+          false
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 0,
+      "other_qualifying_draws": 0,
+      "different": false,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-resnet20-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-10",
+      "model": "VGG-16",
+      "T": 2,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          true,
+          false
+        ],
+        "FTBC-tuned": [
+          true,
+          true,
+          true
+        ]
+      },
+      "selected_qualifying_draws": 2,
+      "other_qualifying_draws": 3,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-vgg16-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-10",
+      "model": "VGG-16",
+      "T": 4,
+      "selected_control": "FTBC-tuned",
+      "other_control": "FTBC-96",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          true,
+          true
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          true
+        ]
+      },
+      "selected_qualifying_draws": 1,
+      "other_qualifying_draws": 3,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-vgg16-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-10",
+      "model": "VGG-16",
+      "T": 8,
+      "selected_control": "FTBC-tuned",
+      "other_control": "FTBC-96",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          false,
+          true
+        ],
+        "FTBC-tuned": [
+          true,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 1,
+      "other_qualifying_draws": 2,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c10-vgg16-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-100",
+      "model": "ResNet-20",
+      "T": 2,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          false,
+          true
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          true
+        ]
+      },
+      "selected_qualifying_draws": 2,
+      "other_qualifying_draws": 1,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-resnet20-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-100",
+      "model": "ResNet-20",
+      "T": 4,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          true,
+          true
+        ],
+        "FTBC-tuned": [
+          true,
+          true,
+          true
+        ]
+      },
+      "selected_qualifying_draws": 3,
+      "other_qualifying_draws": 3,
+      "different": false,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-resnet20-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-100",
+      "model": "ResNet-20",
+      "T": 8,
+      "selected_control": "FTBC-96",
+      "other_control": "FTBC-tuned",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          true,
+          true
+        ],
+        "FTBC-tuned": [
+          true,
+          true,
+          true
+        ]
+      },
+      "selected_qualifying_draws": 3,
+      "other_qualifying_draws": 3,
+      "different": false,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-resnet20-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-100",
+      "model": "VGG-16",
+      "T": 2,
+      "selected_control": "FTBC-tuned",
+      "other_control": "FTBC-96",
+      "joint_outcomes": {
+        "FTBC-96": [
+          true,
+          true,
+          true
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 0,
+      "other_qualifying_draws": 3,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-vgg16-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-100",
+      "model": "VGG-16",
+      "T": 4,
+      "selected_control": "FTBC-tuned",
+      "other_control": "FTBC-96",
+      "joint_outcomes": {
+        "FTBC-96": [
+          false,
+          true,
+          true
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 0,
+      "other_qualifying_draws": 2,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-vgg16-main-acceptance.json"
+    },
+    {
+      "dataset": "CIFAR-100",
+      "model": "VGG-16",
+      "T": 8,
+      "selected_control": "FTBC-tuned",
+      "other_control": "FTBC-96",
+      "joint_outcomes": {
+        "FTBC-96": [
+          false,
+          false,
+          true
+        ],
+        "FTBC-tuned": [
+          false,
+          false,
+          false
+        ]
+      },
+      "selected_qualifying_draws": 0,
+      "other_qualifying_draws": 1,
+      "different": true,
+      "source_record": "ccfa-workfiles/planning/ftbc-next-stage/route-c/locked-eval-v2/c100-vgg16-main-acceptance.json"
+    }
+  ]
+}

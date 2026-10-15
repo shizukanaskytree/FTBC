@@ -1,0 +1,10 @@
+# No packages are required for the default CPU result-aggregation command.
+# Recorded core versions; choose the PyTorch wheel appropriate to the machine.
+torch==2.5.0
+torchvision==0.20.0
+numpy==2.2.6
+Pillow==12.0.0
+# Auxiliary imports in archived analysis scripts; historical versions not recorded.
+scipy
+matplotlib
+sympy
